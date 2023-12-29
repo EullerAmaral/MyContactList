@@ -86,23 +86,13 @@ extension ContactListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-            let editAction = UIContextualAction(style: .normal, title: "Editar") { [weak self] (_, _, completion) in
-                // Implemente a lógica para editar o contato na posição indexPath.row
-                // Exemplo: Navegar para a tela de edição do contato passando as informações do contato selecionado
-                
-                completion(true)
-            }
-            editAction.backgroundColor = .blue
-
             let deleteAction = UIContextualAction(style: .destructive, title: "Excluir") { [weak self] (_, _, completion) in
-                // Implemente a lógica para excluir o contato na posição indexPath.row
-                // Exemplo: Remover o contato da lista e atualizar a tableView
                 self?.contact.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .automatic)
                 completion(true)
             }
 
-            let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+            let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
             return swipeActions
         }
     
