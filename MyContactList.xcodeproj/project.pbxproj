@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2A371CB62B3732CC0043802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A371CB52B3732CC0043802A /* AppDelegate.swift */; };
 		2A371CB82B3732CC0043802A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A371CB72B3732CC0043802A /* SceneDelegate.swift */; };
-		2A371CBA2B3732CC0043802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A371CB92B3732CC0043802A /* ViewController.swift */; };
 		2A371CBF2B3732CE0043802A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A371CBE2B3732CE0043802A /* Assets.xcassets */; };
 		2A371CC22B3732CE0043802A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A371CC02B3732CE0043802A /* LaunchScreen.storyboard */; };
 		2A371CCB2B3733400043802A /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A371CCA2B3733400043802A /* ContactListViewController.swift */; };
@@ -24,7 +23,6 @@
 		2A371CB22B3732CC0043802A /* MyContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A371CB52B3732CC0043802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A371CB72B3732CC0043802A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A371CB92B3732CC0043802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A371CBE2B3732CE0043802A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A371CC12B3732CE0043802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A371CC32B3732CE0043802A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				2A3ACAFB2B38DC5C00BB3E5B /* ContactDetails */,
 				2A371CB52B3732CC0043802A /* AppDelegate.swift */,
 				2A371CB72B3732CC0043802A /* SceneDelegate.swift */,
-				2A371CB92B3732CC0043802A /* ViewController.swift */,
 				2A371CBE2B3732CE0043802A /* Assets.xcassets */,
 				2A371CC02B3732CE0043802A /* LaunchScreen.storyboard */,
 				2A371CC32B3732CE0043802A /* Info.plist */,
@@ -187,7 +184,6 @@
 				2A371CD02B37403C0043802A /* Contact.swift in Sources */,
 				2A3ACB012B38DF1C00BB3E5B /* ContactDetailsScreen.swift in Sources */,
 				2A371CD32B3742150043802A /* Alert.swift in Sources */,
-				2A371CBA2B3732CC0043802A /* ViewController.swift in Sources */,
 				2A371CCB2B3733400043802A /* ContactListViewController.swift in Sources */,
 				2A371CB62B3732CC0043802A /* AppDelegate.swift in Sources */,
 				2A371CB82B3732CC0043802A /* SceneDelegate.swift in Sources */,

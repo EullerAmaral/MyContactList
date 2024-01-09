@@ -33,7 +33,6 @@ class AlertHelper {
         
         alertController.addAction(cancelAction)
         alertController.addAction(saveAction)
-        
         viewController.present(alertController, animated: true)
     }
 }
