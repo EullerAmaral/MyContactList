@@ -86,14 +86,37 @@ extension ContactListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-            let deleteAction = UIContextualAction(style: .destructive, title: "Excluir") { [weak self] (_, _, completion) in
-                self?.contact.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .automatic)
-                completion(true)
-            }
-
-            let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
-            return swipeActions
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Excluir") { [weak self] (_, _, completion) in
+            self?.contact.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            completion(true)
         }
+        deleteAction.backgroundColor = .red
     
+        let editAction = UIContextualAction(style: .normal, title: "Editar") { [weak self] (_, _, completionHandler) in
+            self?.editContact(at: indexPath)
+            completionHandler(true)
+        }
+        editAction.backgroundColor = .blue
+        
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+        configuration.performsFirstActionWithFullSwipe = false
+        return configuration
+    }
+    
+    private func editContact(at indexPath: IndexPath) {
+        let selectedContact = contact[indexPath.row]
+        
+        AlertHelper.displayAlertToAddContact(on: self) { [weak self] name, phone, email in
+            var updatedContact = selectedContact
+            updatedContact.name = name
+            updatedContact.phone = phone
+            updatedContact.email = email
+            
+            self?.contact[indexPath.row] = updatedContact
+            self?.saveContacts()
+            self?.contactListScreen?.tableView.reloadData()
+        }
+    }
 }

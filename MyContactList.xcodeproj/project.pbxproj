@@ -68,10 +68,8 @@
 				2A371CCE2B3740260043802A /* Model */,
 				2A371CC92B3733130043802A /* ContactList */,
 				2A3ACAFB2B38DC5C00BB3E5B /* ContactDetails */,
-				2A371CB52B3732CC0043802A /* AppDelegate.swift */,
-				2A371CB72B3732CC0043802A /* SceneDelegate.swift */,
+				2A4108E42B4DFE02005298AE /* Others */,
 				2A371CBE2B3732CE0043802A /* Assets.xcassets */,
-				2A371CC02B3732CE0043802A /* LaunchScreen.storyboard */,
 				2A371CC32B3732CE0043802A /* Info.plist */,
 			);
 			path = MyContactList;
@@ -109,6 +107,16 @@
 				2A3ACB002B38DF1C00BB3E5B /* ContactDetailsScreen.swift */,
 			);
 			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		2A4108E42B4DFE02005298AE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2A371CC02B3732CE0043802A /* LaunchScreen.storyboard */,
+				2A371CB72B3732CC0043802A /* SceneDelegate.swift */,
+				2A371CB52B3732CC0043802A /* AppDelegate.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
